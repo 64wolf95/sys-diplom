@@ -35,8 +35,8 @@
 
 ### Решение
 
-![screen](screenshots/1.1.png)
-![screen](screenshots/1.2.png)
+![screen](screenshots/1.1.jpg)
+![screen](screenshots/1.2.jpg)
 
 ### Сайт
 Создайте две ВМ в разных зонах, установите на них сервер nginx, если его там нет. ОС и содержимое ВМ должно быть идентичным, это будут наши веб-сервера.
@@ -82,8 +82,8 @@
 ![screen](screenshots/3.2.png)
 ![screen](screenshots/3.3.png)
 
-Zabbix доступен по ссылке: http://178.154.201.199/zabbix
-Логин: Admin
+Zabbix доступен по ссылке: http://178.154.201.199/zabbix  
+Логин: Admin  
 Пароль: zabbix
 
 ### Логи
