@@ -1,5 +1,5 @@
 
-#  Дипломная работа по профессии «Системный администратор»
+#  Дипломная работа по профессии «Системный администратор» - Тесаев Максим
 
 Содержание
 ==========
@@ -33,6 +33,11 @@
 
 Ознакомьтесь со всеми пунктами из этой секции, не беритесь сразу выполнять задание, не дочитав до конца. Пункты взаимосвязаны и могут влиять друг на друга.
 
+### Решение
+
+![screen](screenshots/1.1.png)
+![screen](screenshots/1.2.png)
+
 ### Сайт
 Создайте две ВМ в разных зонах, установите на них сервер nginx, если его там нет. ОС и содержимое ВМ должно быть идентичным, это будут наши веб-сервера.
 
@@ -53,15 +58,44 @@
 Протестируйте сайт
 `curl -v <публичный IP балансера>:80` 
 
+## Решение
+
+![screen](screenshots/2.1.png)
+![screen](screenshots/2.2.png)
+![screen](screenshots/2.3.png)
+![screen](screenshots/2.4.png)
+![screen](screenshots/2.5.png)
+![screen](screenshots/2.6.png)
+![screen](screenshots/2.7.png)
+![screen](screenshots/2.8.png)
+
+Сайт доступен по ссылке: http://158.160.177.210/
+
 ### Мониторинг
 Создайте ВМ, разверните на ней Zabbix. На каждую ВМ установите Zabbix Agent, настройте агенты на отправление метрик в Zabbix. 
 
 Настройте дешборды с отображением метрик, минимальный набор — по принципу USE (Utilization, Saturation, Errors) для CPU, RAM, диски, сеть, http запросов к веб-серверам. Добавьте необходимые tresholds на соответствующие графики.
 
+## Решение
+
+![screen](screenshots/3.1.png)
+![screen](screenshots/3.2.png)
+![screen](screenshots/3.3.png)
+
+Zabbix доступен по ссылке: http://178.154.201.199/zabbix
+Логин: Admin
+Пароль: zabbix
+
 ### Логи
 Cоздайте ВМ, разверните на ней Elasticsearch. Установите filebeat в ВМ к веб-серверам, настройте на отправку access.log, error.log nginx в Elasticsearch.
 
 Создайте ВМ, разверните на ней Kibana, сконфигурируйте соединение с Elasticsearch.
+
+## Решение
+
+![screen](screenshots/4.1.png)
+
+Kibana доступна по ссылке: http://178.154.201.177:5601
 
 ### Сеть
 Разверните один VPC. Сервера web, Elasticsearch поместите в приватные подсети. Сервера Zabbix, Kibana, application load balancer определите в публичную подсеть.
@@ -72,8 +106,19 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
 Исходящий доступ в интернет для ВМ внутреннего контура через [NAT-шлюз](https://yandex.cloud/ru/docs/vpc/operations/create-nat-gateway).
 
+## Решение
+
+![screen](screenshots/5.1.png)
+![screen](screenshots/5.2.png)
+![screen](screenshots/5.3.png)
+
 ### Резервное копирование
 Создайте snapshot дисков всех ВМ. Ограничьте время жизни snaphot в неделю. Сами snaphot настройте на ежедневное копирование.
+
+## Решение
+
+![screen](screenshots/6.1.png)
+![screen](screenshots/6.2.png)
 
 ### Дополнительно
 Не входит в минимальные требования. 
