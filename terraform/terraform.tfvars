@@ -1,0 +1,5 @@
+cloud_id            = "b1g6ds7t3o1jsv2ve563"
+folder_id           = "b1gnoes2tt751qfg2ckh"
+sa_key_file         = "/root/.yc-keys/sa-key.json"
+public_ssh_key_path = "/root/.ssh/yc-bastion.pub"
+vm_username         = "ubuntu"
