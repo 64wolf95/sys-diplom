@@ -82,7 +82,7 @@
 ![screen](screenshots/3.2.png)
 ![screen](screenshots/3.3.png)
 
-Zabbix доступен по ссылке: http://178.154.201.199/zabbix  
+Zabbix доступен по ссылке: http://84.201.156.117/zabbix  
 Логин: Admin  
 Пароль: zabbix
 
@@ -95,7 +95,7 @@ Cоздайте ВМ, разверните на ней Elasticsearch. Устан
 
 ![screen](screenshots/4.1.png)
 
-Kibana доступна по ссылке: http://178.154.201.177:5601
+Kibana доступна по ссылке: http://51.250.82.2:5601
 
 ### Сеть
 Разверните один VPC. Сервера web, Elasticsearch поместите в приватные подсети. Сервера Zabbix, Kibana, application load balancer определите в публичную подсеть.
